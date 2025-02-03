@@ -1,0 +1,23 @@
+.navbar {
+    background-color:deeppink;
+    padding: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: gold;
+    /* text-decoration: underline; */
+}

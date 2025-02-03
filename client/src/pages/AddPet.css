@@ -1,0 +1,41 @@
+
+.heading
+{
+    font-size: 50px;
+    padding-bottom: 30px; 
+    text-align: center;
+}
+
+input
+{
+    margin-bottom: 20px;
+    /* margin-left: 50px; */
+    
+}
+
+.form
+{
+    margin-left: 400px;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 500px;
+    padding: 50px;
+    background-color: #FBFAF2;
+    border-radius: 20px;
+    
+}
+
+button
+{
+    width:300px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: #2962FF;
+    border-radius: 5px;
+}
+
+
+
+
+
+    
