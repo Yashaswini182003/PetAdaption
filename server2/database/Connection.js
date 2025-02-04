@@ -5,7 +5,7 @@ function Runserver()
     try
     {
         // this is the correct link below for database connection 
-        mongoose.connect('mongodb+srv://root:Yash123%2A%23@cluster0.dqdep.mongodb.net/database3?retryWrites=true&w=majority&appName=Cluster0');
+        mongoose.connect(process.env.MONGO_URL);
         console.log('Mongodb connected')
     } 
     catch (error) 
