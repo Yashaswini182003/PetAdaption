@@ -10,7 +10,7 @@ const PetList = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3000/pet/getallpets")
+            .get(`${import.meta.env.VITE_BACKEND_URL}/pet/getallpets`)
             .then((response) => {
                 // console.log(response.data); // Log the entire response
                 setPets(response.data);

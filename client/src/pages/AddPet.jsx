@@ -63,7 +63,7 @@ const AddPet = () => {
   }
 
   try {
-    await axios.post("http://localhost:3000/pet/addpets", pet);
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/pet/addpets`, pet);
     alert("Pet added successfully!");
     navigate("/");
   } catch (error) {

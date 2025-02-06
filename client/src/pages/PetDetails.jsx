@@ -18,7 +18,7 @@ const PetDetails = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:3000/pet/pets/${id}`)
+            .get(`${import.meta.env.VITE_BACKEND_URL}/pet/pets/${id}`)
             .then((response) => setPet(response.data))
             .catch((error) => console.error("Error fetching pet details:", error));
     }, [id]);
@@ -26,7 +26,7 @@ const PetDetails = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:3000/application/applications", {
+            .post(`${import.meta.env.VITE_BACKEND_URL}/application/applications`, {
                 ...form,
                 petId: id,
             })
